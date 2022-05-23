@@ -1,0 +1,64 @@
+/*Letter Dop*/
+  .drople {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: #fff;
+    text-align: center !important;
+  }
+
+  .letters {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+      text-shadow: 0.1em 0.1em 0.05em white;
+    font-size: 1.5em;
+    color: #141b37;
+  }
+
+
+
+  .letterDrop {
+    position: relative;
+    top: 0;  
+    display: inline-block;
+    text-transform: uppercase; 
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    transform: rotateX(-90deg);
+    animation: letterDrop 1.2s ease 1 normal forwards;
+  }
+
+  @keyframes letterDrop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 0.8;
+          top: 3.75em;
+          transform: rotateX(-360deg);
+      }
+      100% {
+          opacity: 1;
+          top: 4.50em;
+          transform: rotateX(360deg);
+      }
+  }
+
+
+  span:nth-child(2n) {
+    color: #141b37;
+  }
+.nuevo{
+    width: 200px;       
+        height: 200px;
+        margin: 0 auto;
+    margin-top: 2em;
+}
+.text-dangerous{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
